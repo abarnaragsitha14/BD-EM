@@ -18,12 +18,12 @@ It helps reduce the time required to find potential donors.
 The System provides secure signup and login, donor registration, emergency blood requests, and automatic donor matching.
 It also allows admins to manage users and requests and maintains donation and notification records.
 ## 6. Core Entities/Database Tables
-1. User - Stores user account and role details
-2. Donor Profile - Stores Donor blood group and availability
-3. Blood Request - Stores Emergency blood requests
-4. Match - Stores donor - request matching details
-5. Donation - Stores completed donation records
-6. Notification - Stores Notification details
+DONOR – Stores information about people who donate blood, including their blood group, age, contact details, and donation history.
+HOSPITAL – Stores hospital details such as hospital name, address, city, and contact number.
+PATIENT – Stores patient information, including required blood group, contact details, emergency level, and associated hospital.
+EMERGENCY_REQUEST – Records emergency blood requests made for patients, including blood group required, quantity, and request status.
+DONATION – Stores details of blood donations, including donor, blood bank, blood group, donation date, and quantity.
+BLOOD BANK – Stores information about blood banks, including name, location, contact details, capacity, and stored blood donations.
 ## 7. Success Criteria
 The system is successful when users can register and log in securely.
 donors can maintain their availability.
@@ -41,7 +41,7 @@ Frontend: React.js
 Backend: FastAPI,Python
 Authentication: JWT
 ORM: SQLAlchemy
-Database: PostggreSQL
+Database: SQL Lite
 API Documentation: FastAPI Swagger/ OpenAPI
 Testing: Pytest
 CI/CD: Github Actions 
